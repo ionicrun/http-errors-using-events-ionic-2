@@ -8,7 +8,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { MockDataProvider } from '../providers/mock-data/mock-data';
+import { MockDataProviderExt } from '../providers/mock-data/mock-data';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { MockDataProvider } from '../providers/mock-data/mock-data';
     HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    InMemoryWebApiModule.forRoot(MockDataProvider)
+    InMemoryWebApiModule.forRoot(MockDataProviderExt)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,7 +30,7 @@ import { MockDataProvider } from '../providers/mock-data/mock-data';
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    MockDataProvider
+    MockDataProviderExt
   ]
 })
 export class AppModule { }

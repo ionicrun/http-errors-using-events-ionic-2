@@ -1,21 +1,22 @@
-## Related post: [Using the In Memory Web API with Ionic 2+](https://www.ionicrun.com/using-the-in-memory-web-api-with-ionic-2/)
+## Related post: [HTTP error handling; informing the user in an Ionic 2+ App](https://www.ionicrun.com/http-error-handling-informing-the-user-in-an-ionic-2-app/)
 
----
+<p align="center">
+  <img src="http-errors-using-events-ionic-2.gif" title="HTTP error handling; informing the user in an Ionic 2+ App">
+</p>
 
-## Getting started
+## Install & Run
 
 ```bash
 # download or clone
-$ git clone https://github.com/ionicrun/in-memory-web-api-ionic-2-base.git
-$ cd in-memory-web-api-ionic-2-base
+$ git clone https://github.com/ionicrun/http-errors-using-events-ionic-2.git
+$ cd http-errors-using-events-ionic-2
 
 # install the packages
 $ npm i
 
 # serve or run
-$ ionic serve
-
+$ ionic cordova run ios
 # or
-# ionic cordova run ios/android
+$ ionic cordova run android
 
 ```
